@@ -1,0 +1,7 @@
+.socialButton {
+  display: flex;
+  align-items: center;
+  border: transparent;
+  border-radius: 30px;
+  cursor: pointer;
+}

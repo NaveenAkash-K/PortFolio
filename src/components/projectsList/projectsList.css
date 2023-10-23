@@ -1,0 +1,40 @@
+
+/*.project-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-list {
+  flex: 1; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.project-item {
+  margin-left: 18vw;
+  font-size: 2.5rem;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-item.hovered {
+  font-size: 3rem;
+  color: #ffeaa7;
+}
+
+.project-details {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10vw;
+}
+
+.details-content {
+  padding: 20px;
+  text-align: center;
+}
+*/
+

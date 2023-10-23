@@ -1,0 +1,23 @@
+.bottomBar{
+  position: sticky;
+  margin-top: 3rem;
+  bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* height: 3rem; */
+}
+
+.nav-link{
+  text-decoration: none;
+  color: white;
+  mix-blend-mode: difference;
+  font-weight: bold;
+}
+
+.nav-link_active{
+  font-weight: bold;
+  text-decoration: none;
+  color: #FFEAA7;
+}

@@ -1,0 +1,17 @@
+.projects{
+  /* height: 100vh; */
+  background-image: url(../../assets/cube-1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.projects_heading{
+  text-align: center;
+  color: white; /* Adjust text color */
+  font-weight:bold;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  font-size: 5vw; /* Adjust text size */
+  mix-blend-mode:difference; /* Adjust blend mode as needed */
+
+}

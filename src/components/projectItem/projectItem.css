@@ -1,0 +1,32 @@
+.projectItem {
+  background-color: rgba(255, 255, 255);
+  mix-blend-mode: difference;
+  border: solid 3px rgb(136, 136, 136);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 17rem;
+  transition: ease-in-out 300ms;
+}
+
+.projectItem:hover{
+  transform: scale(1.1);
+}
+
+.projectName{
+  margin-bottom: 1rem;
+}
+
+
+.skills{
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+
+.skills > *{
+  background-color: #ffeaa7;
+  padding: 8px 13px 8px 13px;
+  border-radius: 20px;
+  margin: 5px;
+}
