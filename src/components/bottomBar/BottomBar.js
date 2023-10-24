@@ -1,35 +1,44 @@
-// BottomBar.js
 import React from "react";
+import { Link } from "react-scroll";
 import "./bottomBar.css";
 import SocialButton from "../socialButton/SocialButton";
 
 function BottomBar() {
   return (
     <div className="bottomBar">
-      <nav
-        style={{
-          display: "flex",
-          justifyContent: "space-evenly",
-          width: "50%",
-        }}
-      >
-        <a href="#home" className="nav-link">
+      <nav>
+        <Link
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={0} // Adjust the offset if needed
+          duration={500}
+          className="nav-link"
+        >
           HOME
-        </a>
-        <a href="#about" className="nav-link">
+        </Link>
+        <Link
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={50} // Adjust the offset if needed
+          duration={500}
+          className="nav-link"
+        >
           ABOUT
-        </a>
-        <a href="#projects" className="nav-link">
+        </Link>
+        <Link
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={50} // Adjust the offset if needed
+          duration={500}
+          className="nav-link"
+        >
           PROJECTS
-        </a>
+        </Link>
       </nav>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-evenly",
-          width: "50%",
-        }}
-      >
+      <div className="social-button_div">
         <SocialButton></SocialButton>
       </div>
     </div>

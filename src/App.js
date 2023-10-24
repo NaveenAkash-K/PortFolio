@@ -62,6 +62,7 @@ function App() {
         activeSection={activeSection}
         onNavLinkClick={handleNavLinkClick}
       />
+      <p className="desktop-view">View in desktop for better experience</p>
     </>
   );
 }

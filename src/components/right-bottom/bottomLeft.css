@@ -14,3 +14,9 @@
 .bottomLeft.scrolled {
   transform: translateX(-100%); /* Move leftward out of the screen */
 }
+
+@media screen and (max-width: 770px) {
+  .bottomLeft{
+    display: none;
+  }
+}

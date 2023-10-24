@@ -5,6 +5,7 @@
   border-radius: 20px;
   padding: 2rem;
   width: 17rem;
+  min-width:fit-content;
   transition: ease-in-out 300ms;
 }
 
@@ -13,7 +14,17 @@
 }
 
 .projectName{
+  font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+.projectDescription{
+  font-size: 1rem;
+}
+
+.skills_heading{
+  font-size: 1rem;
+  margin-top: 1rem;
 }
 
 
@@ -28,5 +39,46 @@
   background-color: #ffeaa7;
   padding: 8px 13px 8px 13px;
   border-radius: 20px;
-  margin: 5px;
+  margin: 5px 0.5rem 1rem 2px;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .projectItem{
+    width: 10rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .projectItem{
+    background-color: #edefff;
+    padding: 1.5rem;
+    width: 15rem;
+  }
+  .projectName{
+    font-size: 1.8rem;
+    color: #001558;
+    /* margin-bottom: 0.5rem; */
+  }
+  
+  .projectDescription{
+    color: #001558;
+    /* font-size: 1rem; */
+  }
+  
+  .skills_heading{
+    color: #001558;
+    /* font-size: 0.7rem; */
+    /* margin-top: 0.5rem; */
+  }
+  .skills{
+    color: #001558;
+  }
+  .skills > *{
+    /* background-color: #001558; */
+    color: #001558;
+    margin: 5px 0.5rem 0.5rem 2px;
+    /* padding: 2px 7px 1px 7px; */
+    /* font-size: 0.3rem; */
+  }
 }

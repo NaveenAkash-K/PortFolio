@@ -14,3 +14,9 @@
 .topRight.scrolled {
   transform: translateX(100%); /* Move rightward out of the screen */
 }
+
+@media screen and (max-width: 770px) {
+  .topRight{
+    display: none;
+  }
+}

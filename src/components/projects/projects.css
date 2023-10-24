@@ -11,7 +11,18 @@
   font-weight:bold;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  font-size: 5vw; /* Adjust text size */
+  font-size: 5rem; /* Adjust text size */
   mix-blend-mode:difference; /* Adjust blend mode as needed */
 
+}
+
+@media screen and (max-width:770px) {
+  .projects{
+    background-image:none;
+  }
+  .projects_heading{
+    color: #ffeaa7;
+    font-size: 3rem;
+  }
+  
 }

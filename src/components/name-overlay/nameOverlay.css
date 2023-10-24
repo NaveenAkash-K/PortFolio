@@ -12,7 +12,32 @@
 }
 
 .description{
-  font-size: 1.5vw; /* Adjust text size */
+  font-size: 1.5rem; /* Adjust text size */
   /* font-size: x-large; */
   text-align: center;
+}
+
+@media screen and (max-width:770px) {
+  .nameOverlay{
+    top: 50%;
+    left: 40%;
+    transform: translate(-30%, -50%);
+    font-size: 3rem
+  }
+}
+
+@media screen and (max-width:630px) {
+  .nameOverlay{
+    top: 45%;
+    left: 38%;
+    transform: translate(-30%, -50%);
+    font-size: 4rem;
+    text-align: center;
+    color: #ffeaa7;
+  }
+
+  .description{
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
 }

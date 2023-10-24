@@ -55,14 +55,7 @@ const ProjectsList = () => {
   ];
 
   return (
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "auto auto auto",
-        rowGap: "4rem",
-        justifyContent: "space-around",
-      }}
-    >
+    <div className="projectsList">
       <ProjectItem />
       <ProjectItem />
       <ProjectItem />

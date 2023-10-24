@@ -8,10 +8,10 @@ function ProjectItem() {
         sfdvs sfdvs sfdvs sfdvs sfdvs sfdvs sfdvs sfdvs sfdvs sfdvs sfdvs sfdvs
         sfdvs sfdvs sfdvs sfdvs sfdvs sfdvs sfdvs{" "}
       </p>
-      <h3 style={{marginTop:"1rem"}}>Skills</h3>
+      <h3 className="skills_heading">Skills</h3>
       <div className="skills">
-        <h4>Flutter</h4>
-        <h4>Flutter</h4>
+        <h4>CSS</h4>
+        <h4>HTML</h4>
         <h4>Flutter</h4>
         <h4>Flutter</h4>
         <h4>Flutter</h4>

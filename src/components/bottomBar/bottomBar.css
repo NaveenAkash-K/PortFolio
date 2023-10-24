@@ -1,4 +1,4 @@
-.bottomBar{
+.bottomBar {
   position: sticky;
   margin-top: 3rem;
   bottom: 1rem;
@@ -9,15 +9,38 @@
   /* height: 3rem; */
 }
 
-.nav-link{
-  text-decoration: none;
-  color: white;
-  mix-blend-mode: difference;
-  font-weight: bold;
+.bottomBar > nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
 }
 
-.nav-link_active{
+.nav-link {
+  cursor: pointer;
+  color: white;
   font-weight: bold;
+  transition: 300ms ease-in-out;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+  color: #ffeaa7;
   text-decoration: none;
-  color: #FFEAA7;
+  transform: scale(1.2);
+}
+
+.social-button_div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+@media screen and (max-width: 770px) {
+  .bottomBar {
+    margin-top: 4rem;
+    bottom: 1.4rem;
+  }
+  .bottomBar > nav {
+    display: none;
+  }
 }

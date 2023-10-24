@@ -1,4 +1,3 @@
-
 /*.project-container {
   display: flex;
   justify-content: space-around;
@@ -38,3 +37,16 @@
 }
 */
 
+.projectsList {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 4rem;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 770px) {
+  .projectsList {
+    grid-template-columns: auto;
+  }
+
+}
