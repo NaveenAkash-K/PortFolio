@@ -4,9 +4,11 @@
   border: solid 3px rgb(136, 136, 136);
   border-radius: 20px;
   padding: 2rem;
-  width: 17rem;
-  min-width:fit-content;
+  width: 20rem;
+  /* min-width:fit-content; */
   transition: ease-in-out 300ms;
+  text-align: left;
+  /* height: min-content; */
 }
 
 .projectItem:hover{
@@ -32,35 +34,30 @@
 
 .skills{
   margin-top: 1rem;
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
 }
 
 .skills > *{
   background-color: #ffeaa7;
   padding: 8px 13px 8px 13px;
+  width: min-content;
   border-radius: 20px;
   margin: 5px 0.5rem 1rem 2px;
   font-size: 1rem;
 }
 
-@media screen and (max-width: 1050px) {
-  .projectItem{
-    width: 20vw;
-  }
-  .skills > *{
-    margin: 5px 0rem 0.5rem 0px;
-  }
-}
-
 @media screen and (max-width: 770px) {
   .projectItem{
     padding: 1.5rem;
-    width: 15rem;
+    width: 17rem;
   }
   .projectName{
     font-size: 1.725rem;
+  }
+  .skills{
+    grid-template-columns: auto auto auto;
   }
 
   .skills > *{
