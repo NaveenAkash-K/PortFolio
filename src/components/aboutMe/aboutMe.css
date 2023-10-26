@@ -3,9 +3,9 @@
 /* Add styles for your About Me content as needed */
 .aboutMe{
   min-height: 100vh;
-  background-image: url(../../assets/cube-1.png);
+  background-image: url(../../assets/cube-pattern.png);
   background-size: cover;
-  background-position: center;
+  background-position: center ;
 }
 
 .aboutMe_heading{
@@ -34,11 +34,11 @@
     background-image: none;
   }
   .aboutMe_heading{
-    color: #ffeaa7;
+    /* color: #ffeaa7; */
     font-size: 3rem;
   }
   .aboutMe_Description{
-    color: #ffeaa7;
+    /* color: #ffeaa7; */
     line-height: 2rem;
     font-size: 1rem;
   }

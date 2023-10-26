@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import NameOverlay from "./components/name-overlay/NameOverlay";
 import "./App.css";
 import AboutMe from "./components/aboutMe/AboutMe";
@@ -7,29 +7,32 @@ import TopRight from "./components/top-right/TopRight";
 import BottomLeft from "./components/right-bottom/BottomLeft";
 import BottomBar from "./components/bottomBar/BottomBar";
 import Projects from "./components/projects/Projects";
+import Background from "./components/background/Background";
+import MobilePatternLeft from "./components/mobilePattern-left/MobilePatternLeft";
+import MobilePatternRight from "./components/mobilePattern-Right/MobilePatternRight";
 
 function App() {
-  const [activeSection, setActiveSection] = useState("home");
-
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
 
-        document
-    .querySelector(".topRight")
-    .classList.toggle("scrolled", scrollPosition > 0);
-  document
-    .querySelector(".bottomLeft")
-    .classList.toggle("scrolled", scrollPosition > 0);
-  // Add similar logic for other components
+      document
+        .querySelector(".topRight")
+        .classList.toggle("scrolled", scrollPosition > 0);
 
-      if (scrollPosition < AboutMe.offsetTop) {
-        setActiveSection("home");
-      } else if (scrollPosition < Projects.offsetTop) {
-        setActiveSection("about");
-      } else {
-        setActiveSection("projects");
-      }
+      document
+        .querySelector(".mobilePatternRight")
+        .classList.toggle("scrolled", scrollPosition > 0);
+
+      document
+        .querySelector(".mobilePatternLeft")
+        .classList.toggle("scrolled", scrollPosition > 0);
+
+      document
+        .querySelector(".bottomLeft")
+        .classList.toggle("scrolled", scrollPosition > 0);
+      // Add similar logic for other components
+
     };
 
     // Attach the scroll event listener
@@ -41,16 +44,13 @@ function App() {
     };
   }, []);
 
-  const handleNavLinkClick = (sectionId) => {
-    const sectionElement = document.getElementById(sectionId);
-    if (sectionElement) {
-      sectionElement.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <>
       <div className="main" id="home">
+        <Background />
+        <MobilePatternLeft />
+        <MobilePatternRight />
         <Cube />
         <BottomLeft />
         <NameOverlay />
@@ -58,11 +58,8 @@ function App() {
       </div>
       <AboutMe id="about" />
       <Projects id="projects" />
-      <BottomBar
-        activeSection={activeSection}
-        onNavLinkClick={handleNavLinkClick}
-      />
-      <p className="desktop-view">View in desktop for better experience</p>
+      <BottomBar/>
+      {/* <p className="desktop-view">View in desktop for better experience</p> */}
     </>
   );
 }

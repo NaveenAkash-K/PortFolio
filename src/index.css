@@ -5,18 +5,16 @@
   font-family: 'Poppins', sans-serif;;
 }
 
-body{
+/* body{
   background-image: url(./assets/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-}
+} */
 
-@media screen and (max-width: 770px) {
+/* @media screen and (max-width: 770px) {
   body{
     background-image: url(./assets/mobile-background.jpg);
   }
-
-  
-}
+} */

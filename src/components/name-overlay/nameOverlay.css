@@ -29,11 +29,10 @@
 @media screen and (max-width:630px) {
   .nameOverlay{
     top: 45%;
-    left: 38%;
+    left: 35%;
     transform: translate(-30%, -50%);
     font-size: 4rem;
     text-align: center;
-    color: #ffeaa7;
   }
 
   .description{

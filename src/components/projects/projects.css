@@ -1,9 +1,8 @@
-.projects{
-  /* height: 100vh; */
-  background-image: url(../../assets/cube-1.png);
+/* .projects{
+  background-image: url(../../assets/cube-pattern.png);
   background-size: cover;
   background-position: center;
-}
+} */
 
 .projects_heading{
   text-align: center;
@@ -21,7 +20,7 @@
     background-image:none;
   }
   .projects_heading{
-    color: #ffeaa7;
+    /* color: #ffeaa7; */
     font-size: 3rem;
   }
   

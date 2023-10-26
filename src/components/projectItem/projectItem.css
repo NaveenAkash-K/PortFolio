@@ -10,7 +10,9 @@
 }
 
 .projectItem:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px 1px white;
+  mix-blend-mode: difference;
 }
 
 .projectName{
@@ -45,40 +47,23 @@
 
 @media screen and (max-width: 1050px) {
   .projectItem{
-    width: 10rem;
+    width: 20vw;
+  }
+  .skills > *{
+    margin: 5px 0rem 0.5rem 0px;
   }
 }
 
 @media screen and (max-width: 770px) {
   .projectItem{
-    background-color: #edefff;
     padding: 1.5rem;
     width: 15rem;
   }
   .projectName{
-    font-size: 1.8rem;
-    color: #001558;
-    /* margin-bottom: 0.5rem; */
+    font-size: 1.725rem;
   }
-  
-  .projectDescription{
-    color: #001558;
-    /* font-size: 1rem; */
-  }
-  
-  .skills_heading{
-    color: #001558;
-    /* font-size: 0.7rem; */
-    /* margin-top: 0.5rem; */
-  }
-  .skills{
-    color: #001558;
-  }
+
   .skills > *{
-    /* background-color: #001558; */
-    color: #001558;
-    margin: 5px 0.5rem 0.5rem 2px;
-    /* padding: 2px 7px 1px 7px; */
-    /* font-size: 0.3rem; */
+    margin: 5px 0.25rem 0.5rem 0.25px;
   }
 }
