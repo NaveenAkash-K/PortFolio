@@ -40,7 +40,8 @@
 }
 
 .skills > *{
-  background-color: #ffeaa7;
+  background-color: black;
+  color: white;
   padding: 8px 13px 8px 13px;
   width: min-content;
   border-radius: 20px;

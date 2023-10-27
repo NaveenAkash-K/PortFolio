@@ -4,7 +4,7 @@ import "./App.css";
 import AboutMe from "./components/aboutMe/AboutMe";
 import Cube from "./components/cube/Cube";
 import TopRight from "./components/top-right/TopRight";
-import BottomLeft from "./components/right-bottom/BottomLeft";
+import BottomLeft from "./components/bottom-left/BottomLeft";
 import BottomBar from "./components/bottomBar/BottomBar";
 import Projects from "./components/projects/Projects";
 import Background from "./components/background/Background";
@@ -14,24 +14,26 @@ import AnimatedCursor from "react-animated-cursor";
 
 function App() {
   const handleScroll = () => {
-    const scrollPosition = window.scrollY;
-
-    document
-      .querySelector(".topRight")
-      .classList.toggle("scrolled", scrollPosition > 0);
-
-    document
-      .querySelector(".mobilePatternRight")
-      .classList.toggle("scrolled", scrollPosition > 0);
-
-    document
-      .querySelector(".mobilePatternLeft")
-      .classList.toggle("scrolled", scrollPosition > 0);
-
-    document
-      .querySelector(".bottomLeft")
-      .classList.toggle("scrolled", scrollPosition > 0);
+    requestAnimationFrame(() => {
+      const scrollPosition = window.scrollY;
+      const translateValue = scrollPosition; // Adjust the factor based on your preference
+      document.querySelector(
+        ".topRight"
+      ).style.transform = `translateX(calc(0.5 * ${translateValue}px))`;
+      // document.querySelector(".mobilePatternRight").style.transform = `translateX(-${translateValue}px)`;
+      // document.querySelector(".mobilePatternLeft").style.transform = `translateX(${translateValue}px)`;
+      document.querySelector(
+        ".mobilePatternRight"
+      ).style.transform = `translateX(calc(0.5 * -${translateValue}px))`;
+      document.querySelector(
+        ".mobilePatternLeft"
+      ).style.transform = `translateX(calc(0.5 * ${translateValue}px))`;
+      document.querySelector(
+        ".bottomLeft"
+      ).style.transform = `translateX(calc(0.5 * -${translateValue}px))`;
+    });
   };
+
   window.addEventListener("scroll", handleScroll);
   const width = window.innerWidth;
   return (

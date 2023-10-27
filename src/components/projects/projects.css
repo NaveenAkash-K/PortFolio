@@ -15,6 +15,13 @@
 
 }
 
+@media screen and (max-width:1176px) {
+  .projects_heading{
+    /* color: #ffeaa7; */
+    font-size: 4rem;
+  }
+}
+
 @media screen and (max-width:770px) {
   .projects{
     background-image:none;

@@ -1,3 +1,4 @@
+import React from "react";
 import "./bottomLeft.css";
 
 function BottomLeft() {
