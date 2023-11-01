@@ -4,9 +4,9 @@ const ProjectsList = () => {
   const projects = [
     {
       id: 1,
-      title: "Personal and Shared Money Manager",
+      title: "Wallet Sync",
       description:
-      "Reinventing budget management! My Expense Tracker app isn't your typical finance tool. It's designed for real-life scenarios, helping you effortlessly track personal and shared expenses with your friends, families here. Simplify the complexities of managing money with a user-friendly solution that puts you in control of your financial journey. Embrace financial freedom—because managing money should be as easy as a conversation with a friend.",
+      "Wallet Sync streamlines collaborative finance, effortlessly tracking shared expenses and income with friends or teammates. Manage money together, from bill splitting to group expenses, making financial collaboration seamless.",
       skills: ["Flutter", "Firebase", "Figma"],
       link:"https://github.com/NaveenAkash-K/Simple-Money_Manager"
     },
@@ -14,8 +14,8 @@ const ProjectsList = () => {
       id: 2,
       title: "School Students Dropout Analysis",
       description:
-      "Revolutionizing education in Gujarat! Our project tackles the high dropout rates by introducing a smart system. It's not just data management; it's a dynamic approach to understanding and combating student dropout. With real-time tracking, predictive analytics, and user-friendly interfaces for government authorities, we're shaping policies with precision. Because education is a right, not a privilege.",
-      skills: ["HTML", "CSS", "JS", "Figma", "ML", "Firebase", "MySql"],
+      "Transforming education in Gujarat with our project with data visualization, student management system.  Helping government to shape policies for equal access, because education is a right, not a privilege.",
+      skills: ["HTML", "CSS", "JS", "Figma", "Firebase"],
       link:""
     },
     {
