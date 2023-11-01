@@ -8,7 +8,7 @@ const ProjectsList = () => {
       description:
       "Wallet Sync streamlines collaborative finance, effortlessly tracking shared expenses and income with friends or teammates. Manage money together, from bill splitting to group expenses, making financial collaboration seamless.",
       skills: ["Flutter", "Firebase", "Figma"],
-      link:"https://github.com/NaveenAkash-K/Simple-Money_Manager"
+      link:"https://github.com/NaveenAkash-K/WalletSync-Shared_Money_Manager"
     },
     {
       id: 2,
