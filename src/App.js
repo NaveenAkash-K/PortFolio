@@ -11,8 +11,10 @@ import Background from "./components/background/Background";
 import MobilePatternLeft from "./components/mobilePattern-left/MobilePatternLeft";
 import MobilePatternRight from "./components/mobilePattern-Right/MobilePatternRight";
 import AnimatedCursor from "react-animated-cursor";
+import Like from "./components/like/Like";
 
 function App() {
+
   const handleScroll = () => {
     requestAnimationFrame(() => {
       const scrollPosition = window.scrollY;
@@ -55,7 +57,9 @@ function App() {
         />
       ) : null}
 
+
       <div className="main" id="home">
+      <Like />
         <Background />
         <MobilePatternLeft />
         <MobilePatternRight />
