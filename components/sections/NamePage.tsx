@@ -9,7 +9,7 @@ const NamePage: React.FC = () => {
       <div className={styles.desktopShapes} />
       <div className={styles.wrapper}>
         <p className={styles.name}>NAVEEN AKASH</p>
-        <p className={styles.description}>MERN Stack / Flutter / UI Developer</p>
+        <p className={styles.description}>Flutter / ReactJS / UI Developer</p>
       </div>
     </div>
   );
