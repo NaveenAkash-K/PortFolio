@@ -1,4 +1,6 @@
 import styles from "../../styles/AboutPage.module.css";
+import Image from "next/image";
+import sticker from '../../assets/memoji/hi.webp'
 
 const AboutPage: React.FC = () => {
   return (

@@ -1,6 +1,4 @@
 import styles from "../../styles/NamePage.module.css";
-import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
-import { useState, useEffect } from "react";
 
 const NamePage: React.FC = () => {
   return (
