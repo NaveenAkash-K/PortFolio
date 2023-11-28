@@ -1,11 +1,12 @@
-import styles from "../../styles/AboutPage.module.css";
+import styles from "../../styles/AboutSection.module.css";
 import Image from "next/image";
 import sticker from '../../assets/memoji/hi.webp'
 
-const AboutPage: React.FC = () => {
+const AboutSection: React.FC = () => {
   return (
     <div className={styles.aboutMe} id="aboutMe">
       <p className={styles.heading}>ABOUT</p>
+      {/* <center><Image src={sticker} alt="sticker" width={300}></Image></center> */}
       <p className={styles.description}>
         Hey there! I'm Naveen Akash, A tech enthusiast and a 3rd-year B.Tech IT
         student. Fluent in Flutter, React, C, C++, Python, JS, and Dart. I speak
@@ -19,4 +20,4 @@ const AboutPage: React.FC = () => {
   );
 };
 
-export default AboutPage;
+export default AboutSection;

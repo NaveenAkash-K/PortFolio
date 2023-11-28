@@ -1,8 +1,8 @@
-import AboutPage from "@/components/sections/AboutPage";
-import NamePage from "@/components/sections/NamePage";
+import AboutSection from "@/components/sections/AboutSection";
+import NameSection from "@/components/sections/NameSection";
 import styles from "../styles/index.module.css";
 import { useState, useEffect } from "react";
-import ProjectsPage from "@/components/sections/ProjectsPage";
+import ProjectsSection from "@/components/sections/ProjectsSection";
 import BottomBar from "@/components/UI/BottomBar";
 import LikeButton from "@/components/UI/LikeButton";
 
@@ -28,17 +28,17 @@ const HomePage: React.FC = () => {
         className={styles.mobileShapesRight}
         style={{ left: "-" + scrollPosition * 0.2 + "px" }}
       />
-      <NamePage />
+      <NameSection />
       <div
         className={styles.topRight}
         style={{ left: scrollPosition * 0.5 + "px" }}
       />
-      <AboutPage />
+      <AboutSection />
       <div
         className={styles.bottomLeft}
         style={{ left: "-" + scrollPosition * 0.5 + "px" }}
       />
-      <ProjectsPage />
+      <ProjectsSection />
       <BottomBar />
     </>
   );

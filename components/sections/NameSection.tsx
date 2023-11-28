@@ -1,6 +1,6 @@
-import styles from "../../styles/NamePage.module.css";
+import styles from "../../styles/NameSection.module.css";
 
-const NamePage: React.FC = () => {
+const NameSection: React.FC = () => {
   return (
     <div id="home">
       <div className={styles.background} />
@@ -13,4 +13,4 @@ const NamePage: React.FC = () => {
   );
 };
 
-export default NamePage;
+export default NameSection;

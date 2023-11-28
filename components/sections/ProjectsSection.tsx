@@ -1,4 +1,4 @@
-import styles from "../../styles/ProjectsPage.module.css";
+import styles from "../../styles/ProjectsSection.module.css";
 import ProjectItem from "../UI/ProjectItem";
 const projects: {
   id: number;
@@ -56,7 +56,7 @@ const projects: {
     link: "https://github.com/NaveenAkash-K/HackIT",
   },
 ];
-const ProjectsPage: React.FC = () => {
+const ProjectsSection: React.FC = () => {
   return (
     <div className={styles.projects} id="projects">
       <p className={styles.heading}>Projects</p>
@@ -76,4 +76,4 @@ const ProjectsPage: React.FC = () => {
   );
 };
 
-export default ProjectsPage;
+export default ProjectsSection;
