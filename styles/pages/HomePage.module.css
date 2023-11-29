@@ -1,11 +1,3 @@
-.background {
-  height: 110vh;
-  position: fixed;
-  width: 100%;
-  background-position: center;
-  background-image: url(../assets/images/background.png);
-  background-size: cover;
-}
 
 .bottomLeft{
   position: fixed;
@@ -13,7 +5,7 @@
   left: 0;
   width: 100%; 
   height: 100%;
-  background-image: url(../assets/images/bottom-left-1.png);
+  background-image: url(../../assets/images/bottom-left-1.png);
   background-size: cover;
   background-position: center;
 }
@@ -24,7 +16,7 @@
   right: 0;
   width: 100%; 
   height: 100%;
-  background-image: url(../assets/images/top-right-2.png);
+  background-image: url(../../assets/images/top-right-2.png);
   background-size: cover;
   background-position: center;
 }
@@ -35,7 +27,7 @@
   right: 0;
   width: 100%; /* Adjust the width as needed */
   height: 100%;
-  background-image: url(../assets/images/mobilePatternRight.png);
+  background-image: url(../../assets/images/mobilePatternRight.png);
   background-size: cover;
   background-position: center;
   display: none;
@@ -47,7 +39,7 @@
   right: 0;
   width: 100%; /* Adjust the width as needed */
   height: 100%;
-  background-image: url(../assets/images/mobilePatternLeft.png);
+  background-image: url(../../assets/images/mobilePatternLeft.png);
   background-size: cover;
   background-position: center;
   display: none;

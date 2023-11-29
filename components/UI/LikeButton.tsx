@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
-import styles from "../../styles/LikeButton.module.css";
+import styles from "../../styles/UI/LikeButton.module.css";
 
 const LikeButton: React.FC = () => {
   const [animate, setAnimate] = useState<boolean>(false);

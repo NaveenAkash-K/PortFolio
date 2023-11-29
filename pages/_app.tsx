@@ -13,6 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
   }, []);
   return (
     <>
+      <div className="background" />
       {screenWidth > 770 ? (
         <AnimatedCursor
           innerSize={8}

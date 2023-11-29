@@ -4,3 +4,13 @@
   margin: 0;
   font-family: 'Poppins', sans-serif;
 }
+
+.background {
+  z-index: -1;
+  height: 110vh;
+  position: fixed;
+  width: 100%;
+  background-position: center;
+  background-image: url(../assets/images/background.png);
+  background-size: cover;
+}

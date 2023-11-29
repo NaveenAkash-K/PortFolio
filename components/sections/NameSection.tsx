@@ -1,4 +1,4 @@
-import styles from "../../styles/NameSection.module.css";
+import styles from "../../styles/sections/NameSection.module.css";
 
 const NameSection: React.FC = () => {
   return (

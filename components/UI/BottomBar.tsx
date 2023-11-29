@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import styles from "../../styles/BottomBar.module.css";
+import styles from "../../styles/UI/BottomBar.module.css";
 import Image, { StaticImageData } from "next/image";
 import instagramImage from "../../assets/images/Instagram.png";
 import linkedinImage from "../../assets/images/Linkedin.png";
@@ -43,6 +43,10 @@ const navLinks: {
   {
     title: "ABOUT",
     to: "aboutMe",
+  },
+  {
+    title: "SKILLS",
+    to: "skills",
   },
   {
     title: "PROJECTS",

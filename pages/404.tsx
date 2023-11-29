@@ -1,5 +1,11 @@
+import styles from "../styles/pages/404.module.css";
+
 const Fallback: React.FC = () => {
-  return <h1>404 Page not Found</h1>;
+  return (
+    <div className={styles.errorDiv}>
+      <h1 className={styles.error}>404 Page Not Found</h1>
+    </div>
+  );
 };
 
 export default Fallback;

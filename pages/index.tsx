@@ -1,10 +1,11 @@
 import AboutSection from "@/components/sections/AboutSection";
 import NameSection from "@/components/sections/NameSection";
-import styles from "../styles/index.module.css";
+import styles from "../styles/pages/HomePage.module.css";
 import { useState, useEffect } from "react";
 import ProjectsSection from "@/components/sections/ProjectsSection";
 import BottomBar from "@/components/UI/BottomBar";
 import LikeButton from "@/components/UI/LikeButton";
+import SkillsSection from "@/components/sections/SkillsSection";
 
 const HomePage: React.FC = () => {
   const [scrollPosition, setScrollPosition] = useState<number>(0);
@@ -18,7 +19,6 @@ const HomePage: React.FC = () => {
   return (
     <>
       <LikeButton />
-      <div className={styles.background} />
 
       <div
         className={styles.mobileShapesLeft}
@@ -38,6 +38,7 @@ const HomePage: React.FC = () => {
         className={styles.bottomLeft}
         style={{ left: "-" + scrollPosition * 0.5 + "px" }}
       />
+      <SkillsSection/>
       <ProjectsSection />
       <BottomBar />
     </>
