@@ -17,7 +17,6 @@ const HomePage: React.FC = () => {
   }, []);
   return (
     <div className={styles.HomePage}>
-
       <div
         className={styles.mobileShapesLeft}
         style={{ left: scrollPosition * 0.2 + "px" }}
