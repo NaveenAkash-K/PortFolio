@@ -1,5 +1,5 @@
 .SkillsSection{
-  min-height: 100vh;
+  min-height: 80vh;
   margin-top: 3rem;
 }
 
@@ -8,12 +8,12 @@
   mix-blend-mode: difference;
   font-size: 5rem;
   font-weight: bold;
+  margin-bottom: 3rem;
 }
 
 .main{
-  margin-top: 8rem;
+  /* margin-top: 8rem; */
   display: flex;
-  /* height: 90vh; */
   justify-content: space-around;
 }
 
@@ -32,4 +32,19 @@
 .avatar{
   margin-top: -3rem;
   align-self: center;
+}
+
+@media (width < 1176px) {
+  .heading {
+    font-size: 4rem;
+  }
+}
+
+@media (width < 770px) {
+  .avatar{
+    display: none;
+  }
+  .heading{
+    font-size: 3rem;
+  }
 }

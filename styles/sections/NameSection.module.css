@@ -9,6 +9,7 @@
 .name {
   color: white;
   font-size: 6.2vw;
+  margin-right: 21px;
   text-align: center;
   font-weight: bold;
   mix-blend-mode: difference;
@@ -17,6 +18,7 @@
 .description {
   color: white;
   font-weight: 600;
+  margin-right: 21px;
   mix-blend-mode: difference;
   font-size: 1.5rem;
   text-align: center;

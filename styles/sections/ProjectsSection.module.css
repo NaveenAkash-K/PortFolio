@@ -15,7 +15,7 @@
   justify-content: space-around;
 }
 
-@media screen and (max-width: 1176px) {
+@media (width < 1176px) {
   .heading {
     font-size: 4rem;
   }
@@ -24,7 +24,7 @@
   }
 }
 
-@media screen and (max-width: 770px) {
+@media (width < 770px) {
   .projects {
     background-image: none;
   }

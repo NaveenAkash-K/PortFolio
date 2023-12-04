@@ -11,7 +11,7 @@ const AboutSection: React.FC = () => {
         design mixologist, blending aesthetics with functionality. When I'm not
         crafting digital experiences, you'll find me on a mission to make the
         web a cooler place. Join the journey, and let's redefine the online
-        landscape together! 🎨💻✨{" "}
+        landscape together! 🎨💻✨
       </p>
     </div>
   );

@@ -1,14 +1,17 @@
 .progressOutline{
-  margin-left: 2rem;
+  margin-left: 1rem;
   height: 10px;
-  border: solid #ffeaa7 2px;
+  border: solid white 2px;
+  mix-blend-mode: difference;
   border-radius: 25px;
   width: 17rem;
   content: "";
 }
 
 .progress{
-  background-color: #ffeaa7;
+  border-radius: 25px;
+  background-color: white;
+  mix-blend-mode: difference;
   height: 100%;
   content: "";
 }

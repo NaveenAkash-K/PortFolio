@@ -1,7 +1,7 @@
 import AboutSection from "@/components/sections/AboutSection";
 import NameSection from "@/components/sections/NameSection";
 import styles from "../styles/pages/HomePage.module.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo, useCallback } from "react";
 import ProjectsSection from "@/components/sections/ProjectsSection";
 import BottomBar from "@/components/UI/BottomBar";
 import LikeButton from "@/components/UI/LikeButton";
@@ -15,10 +15,8 @@ const HomePage: React.FC = () => {
       setScrollPosition(window.scrollY);
     });
   }, []);
-
   return (
-    <>
-      <LikeButton />
+    <div className={styles.HomePage}>
 
       <div
         className={styles.mobileShapesLeft}
@@ -38,10 +36,18 @@ const HomePage: React.FC = () => {
         className={styles.bottomLeft}
         style={{ left: "-" + scrollPosition * 0.5 + "px" }}
       />
-      <SkillsSection/>
-      <ProjectsSection />
-      <BottomBar />
-    </>
+
+      {useMemo(() => {
+        return (
+          <>
+            <LikeButton />
+            <SkillsSection />
+            <ProjectsSection />
+            <BottomBar reduced={false} />
+          </>
+        );
+      }, [])}
+    </div>
   );
 };
 

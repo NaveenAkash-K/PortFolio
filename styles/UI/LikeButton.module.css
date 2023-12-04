@@ -16,7 +16,7 @@
   padding: 0px 10px 0px 10px;
   z-index: 3;
   border: none;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .like.pop{
@@ -33,7 +33,7 @@
   background-color: rgba(177, 177, 177, 0.443);
 }
 
-@media screen and (max-width:1376px) and (min-width:770px) {
+@media (width > 1376px) and (width < 770px) {
   .like{
     bottom: 5rem;
   }

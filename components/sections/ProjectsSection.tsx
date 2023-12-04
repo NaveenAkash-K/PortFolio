@@ -1,6 +1,6 @@
 import styles from "../../styles/sections/ProjectsSection.module.css";
 import ProjectItem from "../UI/ProjectItem";
-import ProjectsData from "@/data/ProjectsData";
+import { ProjectsList } from "@/data/ProjectsData";
 import Link from "next/link";
 
 const ProjectsSection: React.FC = () => {
@@ -8,13 +8,15 @@ const ProjectsSection: React.FC = () => {
     <div className={styles.projects} id="projects">
       <p className={styles.heading}>Projects</p>
       <div className={styles.list}>
-        {ProjectsData.map((projectItem) => (
-          <ProjectItem
-            key={projectItem.id}
-            id={projectItem.id}
-            title={projectItem.shortTitle}
-            description={projectItem.shortDescription}
-          />
+        {ProjectsList.map((projectItem) => (
+          <Link href={projectItem.id} style={{ textDecoration: "none" }}>
+            <ProjectItem
+              key={projectItem.id}
+              id={projectItem.id}
+              title={projectItem.title}
+              description={projectItem.description}
+            />
+          </Link>
         ))}
       </div>
     </div>
