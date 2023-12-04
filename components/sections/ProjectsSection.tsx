@@ -8,8 +8,8 @@ const ProjectsSection: React.FC = () => {
     <div className={styles.projects} id="projects">
       <p className={styles.heading}>Projects</p>
       <div className={styles.list}>
-        {ProjectsList.map((projectItem) => (
-          <Link href={projectItem.id} style={{ textDecoration: "none" }}>
+        {ProjectsList.map((projectItem, index) => (
+          <Link href={projectItem.id} key={index} style={{ textDecoration: "none" }}>
             <ProjectItem
               key={projectItem.id}
               id={projectItem.id}

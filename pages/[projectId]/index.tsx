@@ -62,8 +62,8 @@ const ProjectPage: React.FC<{
           <div className={styles.keyFeaturesSection}>
             <h2>Key Features</h2>
             <ol>
-              {project.keyFeatures.map((keyFeature) => (
-                <li>
+              {project.keyFeatures.map((keyFeature, index) => (
+                <li key={index}>
                   <strong>{keyFeature[0]}: </strong>
                   {keyFeature[1]}
                 </li>
@@ -92,8 +92,9 @@ const ProjectPage: React.FC<{
           <div className={styles.screenshotsSection}>
             <h2>Screenshots</h2>
             <div className={styles.screenshotsGrid}>
-              {project.screenshots.map((screenshot) => (
+              {project.screenshots.map((screenshot, index) => (
                 <Image
+                key={index}
                   src={screenshot.image}
                   alt="screenshot"
                   width={
