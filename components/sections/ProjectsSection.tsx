@@ -9,7 +9,7 @@ const ProjectsSection: React.FC = () => {
       <p className={styles.heading}>Projects</p>
       <div className={styles.list}>
         {ProjectsList.map((projectItem, index) => (
-          <Link href={projectItem.id} key={index} style={{ textDecoration: "none" }}>
+          <Link href={projectItem.id} key={index} className={styles.projectLink}>
             <ProjectItem
               key={projectItem.id}
               id={projectItem.id}

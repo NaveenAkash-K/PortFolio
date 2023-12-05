@@ -15,6 +15,10 @@
   justify-content: space-around;
 }
 
+.projectLink{
+  text-decoration: none;
+}
+
 @media (width < 1176px) {
   .heading {
     font-size: 4rem;
@@ -28,10 +32,14 @@
   .projects {
     background-image: none;
   }
+  .projectLink{
+    cursor: none;
+  }
   .heading {
     font-size: 3rem;
   }
   .list {
     grid-template-columns: auto;
+    cursor:none;
   }
 }
