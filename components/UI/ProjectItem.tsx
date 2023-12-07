@@ -14,7 +14,7 @@ const ProjectItem: React.FC<{
         <p className={styles.description}>{props.description}</p>
         <br />
         <p style={{ textDecorationLine: "underline", color:"white", mixBlendMode:"difference" }}>
-          Click for more details.
+          Dive Deeper.
         </p>
       </div>
     </div>

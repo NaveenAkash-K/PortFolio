@@ -13,7 +13,7 @@ const aboutMeData = {
 const AboutSection: React.FC = () => {
   return (
     <div className={styles.aboutMe} id="aboutMe">
-      <p className={styles.heading}>ABOUT</p>
+      <p className={styles.heading}>MEET ME</p>
       <div className={styles.description}>
         <span className={styles.rowNum}>00</span>
         <span className={styles.bracket}>{"{"}</span>
@@ -24,7 +24,7 @@ const AboutSection: React.FC = () => {
               <span className={styles.rowNum}>0{index + 1}</span>
               <div className={styles.keyValueDiv}>
                 <span className={styles.key}>{key}: </span>
-                <span className={styles.value}>{value + ","}</span>
+                <span className={styles.value}>{'"' + value + '",'}</span>
                 <br />
               </div>
             </div>
@@ -38,5 +38,3 @@ const AboutSection: React.FC = () => {
 };
 
 export default AboutSection;
-
-

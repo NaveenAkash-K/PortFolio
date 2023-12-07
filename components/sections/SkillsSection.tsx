@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import styles from "../../styles/sections/SkillsSection.module.css";
-import sticker from "../../assets/memoji/hi.webp";
+import sticker from "../../assets/memoji/v_withBlob.png";
 import reactImage from "../../assets/skills/reactjs.png";
 import nodeJSImage from "../../assets/skills/nodejs.png";
 import nextJSImage from "../../assets/skills/nextjs.png";
@@ -38,7 +38,7 @@ const SkillsSection: React.FC = () => {
           ))}
         </div>
         <div className={styles.avatar}>
-          <Image src={sticker} alt="Avatar" width={400} />
+          <Image src={sticker} alt="Avatar" width={450} />
         </div>
       </div>
     </div>

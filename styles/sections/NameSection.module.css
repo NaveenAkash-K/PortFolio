@@ -1,6 +1,6 @@
 .background {
   z-index: -1;
-  height: 100vh;
+  height: 105vh;
   position: absolute;
   width: 100%;
 }
@@ -40,6 +40,12 @@
   background-image: url(../../assets/images/pattern.png);
   background-size: cover;
   background-position: center;
+}
+
+@media (width < 993px) {
+  .description{
+    font-size: 1.2rem;
+  }
 }
 
 @media (width < 770px) {
