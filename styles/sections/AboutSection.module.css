@@ -1,0 +1,87 @@
+.aboutMe {
+  position: relative;
+  min-height: 110vh;
+}
+
+.heading {
+  text-align: center;
+  color: #ffeaa8;
+  color: white;
+  font-weight: bold;
+  padding-top: 8rem;
+  font-size: 5rem;
+  mix-blend-mode: difference;
+}
+
+.description {
+  font-family: "Fira Code", monospace;
+  text-align: start;
+  font-weight: 500;
+  padding: 2.5vh 5vw 0 15vw;
+  word-spacing: 5px;
+  line-height: 4rem;
+  font-size: 1.4rem;
+}
+
+.rowNum {
+  color: rgb(175, 175, 175);
+  margin-right: 1rem;
+  font-family: "Fira Code", monospace;
+}
+
+.keyValueDiv {
+  margin-left: 3rem;
+}
+
+.bracket,
+.key,
+.value {
+  font-family: "Fira Code", monospace;
+  color: #8ae582;
+}
+
+.bracket {
+  color: #1b67f3;
+  color: rgb(208, 32, 208);
+}
+
+.value {
+  color: #ffdc2c;
+}
+
+@media (width < 1176px) {
+  .heading {
+    font-size: 4rem;
+  }
+  .description {
+    line-height: 3rem;
+    font-size: 1rem;
+  }
+}
+
+@media (width < 770px) {
+  .aboutMe {
+    min-height: 100vh;
+  }
+  .aboutMe {
+    background-image: none;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+  .description {
+    padding: 10vh 10vw 0 10vw;
+    line-height: 2rem;
+    font-size: 0.9rem;
+    text-align: start;
+    line-height: 1.8rem;
+  }
+  .keyValueDiv {
+    margin-left: 1.5rem;
+  }
+
+  .rowNum {
+    margin-right: 0.5rem;
+  }
+}

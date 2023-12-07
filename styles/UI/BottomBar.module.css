@@ -1,0 +1,66 @@
+.bottomBar {
+  position: fixed;
+  margin-top: 3rem;
+  bottom: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.bottomBar > nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.navLink {
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: 300ms ease-in-out;
+}
+
+.navLink:hover {
+  font-weight: bold;
+  color: #ffeaa7;
+  text-decoration: none;
+  transform: scale(1.2);
+}
+
+.socialButtonDiv {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.socialButton {
+  display: flex;
+  align-items: center;
+  border: transparent;
+  border-radius: 30px;
+  width: max-content;
+}
+
+.socialText{
+  padding-right: 1.2rem;
+  font-weight:bold;
+}
+
+@media (width < 770px) {
+  .bottomBar {
+    margin: 4rem 0rem 0 0rem;
+  }
+  .bottomBar > nav {
+    display: none;
+  }
+  .socialButtonDiv{
+    width: 90%;
+  }
+  .socialText{
+    display: none;
+  }
+  .socialButton.GitHub{
+    background-color: rgba(255, 255, 255, 0.5) !important;
+  }
+}
