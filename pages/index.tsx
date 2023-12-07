@@ -28,12 +28,12 @@ const HomePage: React.FC = () => {
       <NameSection />
       <div
         className={styles.topRight}
-        style={{ left: scrollPosition * 0.5 + "px" }}
+        style={{ left: scrollPosition * 0.7 + "px" }}
       />
       <AboutSection />
       <div
         className={styles.bottomLeft}
-        style={{ left: "-" + scrollPosition * 0.5 + "px" }}
+        style={{ left: "-" + scrollPosition * 0.7 + "px" }}
       />
 
       {useMemo(() => {

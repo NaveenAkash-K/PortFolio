@@ -7,11 +7,12 @@
   border: solid #ffb347 2px;
   border: solid #005497 2px;
   border: solid #ffeaa8 2px;
+  border: solid white 2px;
   /* border: solid #00dafd 2px; */
   /* border: solid #14aa53 2px; */
   /* border: solid #f68308 2px; */
   /* border: solid white 2px; */
-  /* mix-blend-mode: difference; */
+  mix-blend-mode: difference;
   border-radius: 25px;
   width: 17rem;
   content: "";
@@ -25,12 +26,13 @@
   background-color: #ffb347 ;
   background-color: #005497 ;
   background-color: #ffeaa8;
+  background-color: white;
   /* background-color: #00dafd ; */
   /* background-color: #14aa53 ; */
   /* background-color: #f68308 ; */
   /* background-color: white ; */
 
-  /* mix-blend-mode: difference; */
+  mix-blend-mode: difference;
   height: 100%;
   content: "";
 }

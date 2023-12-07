@@ -4,9 +4,9 @@
 }
 
 .heading{
-  color: white;
   color: #ffeaa8;
-  /* mix-blend-mode: difference; */
+  color: white;
+  mix-blend-mode: difference;
   font-size: 5rem;
   font-weight: bold;
   margin-bottom: 3rem;

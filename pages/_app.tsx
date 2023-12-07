@@ -19,9 +19,9 @@ export default function App({ Component, pageProps }: AppProps) {
       {screenWidth > 770 ? (
         <AnimatedCursor
           innerSize={8}
-          outerSize={40}
+          outerSize={35}
           innerScale={0}
-          outerScale={3}
+          outerScale={2}
           outerStyle={{
             mixBlendMode: "difference",
             backgroundColor: "white",
