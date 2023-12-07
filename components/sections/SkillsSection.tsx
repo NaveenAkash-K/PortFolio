@@ -17,8 +17,8 @@ const skills: {
   { image: flutterImage, imgSize: 40, percentage: 90 },
   { image: reactImage, imgSize: 40, percentage: 90 },
   { image: nextJSImage, imgSize: 40, percentage: 80 },
-  { image: nodeJSImage, imgSize: 40, percentage: 70 },
-  { image: mongoDBImage, imgSize: 40, percentage: 60 },
+  { image: nodeJSImage, imgSize: 40, percentage: 75 },
+  { image: mongoDBImage, imgSize: 40, percentage: 75 },
   { image: firebaseImage, imgSize: 40, percentage: 90 },
 ];
 

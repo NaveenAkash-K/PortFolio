@@ -18,7 +18,7 @@ const navLinks: {
     to: "home",
   },
   {
-    title: "ABOUT",
+    title: "MEET ME",
     to: "aboutMe",
   },
   {
