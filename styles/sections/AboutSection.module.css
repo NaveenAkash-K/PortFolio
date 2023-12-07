@@ -17,10 +17,10 @@
   font-family: "Fira Code", monospace;
   text-align: start;
   font-weight: 500;
-  padding: 2.5vh 15vw 0 15vw;
+  padding: 2.5vh 5vw 0 15vw;
   word-spacing: 5px;
   line-height: 4rem;
-  font-size: 1.75rem;
+  font-size: 1.4rem;
 }
 
 .rowNum {
@@ -54,7 +54,7 @@
   }
   .description {
     line-height: 3rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 

@@ -18,8 +18,8 @@ export default function App({ Component, pageProps }: AppProps) {
       {/* <Image src={backgroundImage} alt="bg" loading="eager" className="background" /> */}
       {screenWidth > 770 ? (
         <AnimatedCursor
-          innerSize={8}
-          outerSize={35}
+          innerSize={5}
+          outerSize={20}
           innerScale={0}
           outerScale={2}
           outerStyle={{
