@@ -1,27 +1,33 @@
 .project {
   background-color: rgba(255, 255, 255);
-  mix-blend-mode: difference;
-  border: solid 3px rgb(136, 136, 136);
+  background-color: #ffeaa8;
+  /* mix-blend-mode: difference; */
+  /* border: solid 3px rgb(136, 136, 136); */
   border-radius: 20px;
   padding: 2rem;
   width: 20rem;
   transition: ease-in-out 300ms;
   text-align: left;
+  box-shadow: 0px 0px 5px 2px rgb(30, 30, 30) ;
 }
 
 .project:hover{
-  transform: scale(1.05);
-  box-shadow: 0 0 10px 1px white;
-  mix-blend-mode: difference;
+  /* transform: scale(1.05); */
+  box-shadow: 0 0 10px 1px #ffeaa8;
+  /* mix-blend-mode: difference; */
 }
 
 .name{
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: white;
+  mix-blend-mode: difference;
 }
 
 .description{
   font-size: 1rem;
+  color: white;
+  mix-blend-mode: difference;
 }
 
 /* .skills_heading{

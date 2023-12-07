@@ -9,22 +9,24 @@
 .heading{
   text-align: center;
   color: white; 
+  color: #ffeaa8;
   font-weight:bold;
   padding-top: 6rem;
   font-size: 5rem; 
-  mix-blend-mode:difference; 
-
+  /* mix-blend-mode:difference;  */
+  
 }
 
 .description{
   text-align: center;
   color: white; 
+  color: #ffeaa8;
   font-weight:500;
   padding: 2.5vh 15vw 0 15vw;
   word-spacing: 5px;
   line-height: 4rem;
   font-size: 1.75rem; 
-  mix-blend-mode:difference; 
+  /* mix-blend-mode:difference;  */
 }
 
 @media (width < 1176px) {
@@ -39,6 +41,9 @@
 
 @media (width < 770px) {
   .aboutMe{
+    min-height: 95vh;
+  }
+  .aboutMe{
     background-image: none;
   }
 
@@ -48,5 +53,7 @@
   .description{
     line-height: 2rem;
     font-size: 1rem;
+    text-align:justify;
+    line-height: 1.8rem;
   }
 }

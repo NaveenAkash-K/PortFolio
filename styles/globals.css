@@ -7,9 +7,13 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.background {
+body{
+  background-color: #30333d;
+}
+
+/* .background {
   z-index: -1;
   height: 110vh;
   position: fixed;
   width: 100%;
-}
+} */

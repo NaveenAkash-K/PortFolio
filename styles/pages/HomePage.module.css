@@ -11,6 +11,7 @@
   background-image: url(../../assets/images/bottom-left-1.png);
   background-size: cover;
   background-position: center;
+  z-index: 0;
 }
 
 .topRight{
@@ -22,6 +23,7 @@
   background-image: url(../../assets/images/top-right-2.png);
   background-size: cover;
   background-position: center;
+  z-index: 0;
 }
 
 .mobileShapesRight {

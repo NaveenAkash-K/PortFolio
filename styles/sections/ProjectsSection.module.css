@@ -1,11 +1,17 @@
+.projects{
+  /* z-index: 1; */
+  position: relative;
+}
+
 .heading {
   text-align: center;
   color: white; /* Adjust text color */
+  color: #ffeaa8;
   font-weight: bold;
   padding-top: 5rem;
   padding-bottom: 5rem;
   font-size: 5rem; /* Adjust text size */
-  mix-blend-mode: difference; /* Adjust blend mode as needed */
+  /* mix-blend-mode: difference; */
 }
 
 .list {
@@ -17,6 +23,7 @@
 
 .projectLink{
   text-decoration: none;
+
 }
 
 @media (width < 1176px) {

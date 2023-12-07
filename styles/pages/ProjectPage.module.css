@@ -48,6 +48,7 @@
 
 .overviewSection > p {
   margin: 0px 0 20px 0;
+  text-align: justify;
 }
 
 .keyFeaturesSection > h2 {
@@ -128,6 +129,15 @@
   }
   .title{
     font-size: 2rem;
+  }
+  .skillsGrid {
+    display: flex;
+
+    /* grid-template-columns: auto auto; */
+  }
+  .skill {
+    width: 39%;
+    justify-content: center;
   }
   .screenshotsGrid{
     justify-content: center;

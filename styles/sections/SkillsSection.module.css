@@ -5,7 +5,8 @@
 
 .heading{
   color: white;
-  mix-blend-mode: difference;
+  color: #ffeaa8;
+  /* mix-blend-mode: difference; */
   font-size: 5rem;
   font-weight: bold;
   margin-bottom: 3rem;

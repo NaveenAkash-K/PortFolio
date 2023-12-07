@@ -163,14 +163,14 @@ export const ProjectsData: {
       {
         name: "NodeJS",
         image: nodeJSImage,
-        largeImage: 32,
-        smallImage: 30,
+        largeImage: 30,
+        smallImage: 28,
       },
       {
         name: "JavaScript",
         image: javascriptImage,
-        largeImage: 40,
-        smallImage: 35,
+        largeImage: 33,
+        smallImage: 28,
       },
       {
         name: "Firebase",
@@ -240,8 +240,8 @@ export const ProjectsData: {
       {
         name: "JavaScript",
         image: javascriptImage,
-        largeImage: 35,
-        smallImage: 30,
+        largeImage: 33,
+        smallImage: 28,
       },
       {
         name: "Firebase",
@@ -305,8 +305,8 @@ export const ProjectsData: {
       {
         name: "JavaScript",
         image: javascriptImage,
-        largeImage: 35,
-        smallImage: 30,
+        largeImage: 33,
+        smallImage: 28,
       },
 
     ],
@@ -365,8 +365,8 @@ export const ProjectsData: {
       {
         name: "JavaScript",
         image: javascriptImage,
-        largeImage: 35,
-        smallImage: 30,
+        largeImage: 33,
+        smallImage: 28,
       },
     ],
     keyFeatures: [
@@ -402,8 +402,20 @@ export const ProjectsData: {
       "Revolutionizing the field of predictive maintenance, the Aircraft Engine Failure Prediction project leverages machine learning and PyScript to analyze real-time factors such as temperature, runtime, and speed. By predicting potential failures in aircraft engines, this project plays a crucial role in enhancing safety in aviation. The integration of machine learning technology showcases a commitment to innovation and the application of advanced techniques to real-world challenges, ensuring safer skies for everyone.",
     skills: [
       {
+        name: "HTML",
+        image: htmlImage,
+        largeImage: 35,
+        smallImage: 30,
+      },
+      {
         name: "Firebase",
         image: firebaseImage,
+        largeImage: 35,
+        smallImage: 30,
+      },
+      {
+        name: "CSS",
+        image: cssImage,
         largeImage: 35,
         smallImage: 30,
       },
