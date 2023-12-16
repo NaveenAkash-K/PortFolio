@@ -7,19 +7,29 @@ import nextJSImage from "../../assets/skills/nextjs.png";
 import flutterImage from "../../assets/skills/flutter.png";
 import mongoDBImage from "../../assets/skills/mongodb.png";
 import firebaseImage from "../../assets/skills/firebase.png";
+import ethereumImage from "../../assets/skills/ethereum.png";
+import solidityImage from "../../assets/skills/solidity.png";
 import ProgressBar from "../UI/ProgressBar";
 
 const skills: {
   image: StaticImageData;
   imgSize: number;
   percentage: number;
+  isLearning: boolean;
 }[] = [
-  { image: flutterImage, imgSize: 40, percentage: 90 },
-  { image: reactImage, imgSize: 40, percentage: 90 },
-  { image: nextJSImage, imgSize: 40, percentage: 80 },
-  { image: nodeJSImage, imgSize: 40, percentage: 75 },
-  { image: mongoDBImage, imgSize: 40, percentage: 75 },
-  { image: firebaseImage, imgSize: 40, percentage: 90 },
+  {
+    image: flutterImage,
+    imgSize: 40,
+    percentage: 90,
+    isLearning: false,
+  },
+  { image: reactImage, imgSize: 40, percentage: 90, isLearning: false },
+  { image: nextJSImage, imgSize: 40, percentage: 80, isLearning: false },
+  { image: nodeJSImage, imgSize: 40, percentage: 75, isLearning: false },
+  { image: mongoDBImage, imgSize: 40, percentage: 75, isLearning: false },
+  { image: firebaseImage, imgSize: 40, percentage: 90, isLearning: false },
+  { image: ethereumImage, imgSize: 40, percentage: 10, isLearning: true },
+  { image: solidityImage, imgSize: 40, percentage: 10, isLearning: true },
 ];
 
 const SkillsSection: React.FC = () => {
@@ -32,8 +42,16 @@ const SkillsSection: React.FC = () => {
         <div className={styles.skills}>
           {skills.map((skill) => (
             <div className={styles.skill} key={skills.indexOf(skill)}>
-              <Image src={skill.image} alt="react" width={skill.imgSize} />
-              <ProgressBar percentage={skill.percentage} />
+              <Image
+                className={styles.skillImage}
+                src={skill.image}
+                alt="skill"
+                width={skill.imgSize}
+              />
+              <ProgressBar
+                percentage={skill.percentage}
+                isLoading={skill.isLearning}
+              />{" "}
             </div>
           ))}
         </div>

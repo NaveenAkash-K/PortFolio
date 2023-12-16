@@ -1,3 +1,9 @@
+@keyframes slideToTop {
+  0%{
+    bottom: -3rem;
+  }
+}
+
 .bottomBar {
   position: fixed;
   margin-top: 3rem;
@@ -6,6 +12,7 @@
   display: flex;
   align-items: center;
   z-index: 1;
+  animation: slideToTop 500ms ease-out;
 }
 
 .bottomBar > nav {

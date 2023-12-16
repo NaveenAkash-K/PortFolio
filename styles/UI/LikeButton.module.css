@@ -1,3 +1,9 @@
+@keyframes slideToTop {
+  0%{
+    bottom: -3rem;
+  }
+}
+
 .like {
   position: fixed;
   display: flex;
@@ -16,6 +22,7 @@
   padding: 0px 10px 0px 10px;
   z-index: 3;
   border: none;
+  animation: slideToTop 500ms ease-out;
 }
 
 .like.pop{
