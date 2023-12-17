@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   z-index: 1;
-  animation: slideToTop 500ms ease-out;
+  animation: slideToTop 900ms ease-in;
 }
 
 .bottomBar > nav {

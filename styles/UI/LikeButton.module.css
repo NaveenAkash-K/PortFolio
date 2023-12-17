@@ -22,7 +22,7 @@
   padding: 0px 10px 0px 10px;
   z-index: 3;
   border: none;
-  animation: slideToTop 500ms ease-out;
+  animation: slideToTop 900ms ease-in;
 }
 
 .like.pop{
