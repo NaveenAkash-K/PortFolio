@@ -1,9 +1,9 @@
-.SkillsSection{
+.SkillsSection {
   min-height: 80vh;
   margin-top: 3rem;
 }
 
-.heading{
+.heading {
   color: #ffeaa8;
   color: white;
   mix-blend-mode: difference;
@@ -12,27 +12,38 @@
   margin-bottom: 3rem;
 }
 
-.main{
+.main {
   /* margin-top: 8rem; */
   display: flex;
   justify-content: space-around;
 }
 
-.skills{
+.skills {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.skill{
+.skill {
   display: flex;
   align-items: center;
   margin: 1rem;
 }
 
-.avatar{
+.avatar {
   margin-top: -3rem;
   align-self: center;
+}
+
+@keyframes test {
+  0% {
+    color: transparent;
+    position: relative;
+  }
+  100% {
+    color: white;
+    position: relative;
+  }
 }
 
 @media (width < 1176px) {
@@ -42,10 +53,10 @@
 }
 
 @media (width < 770px) {
-  .avatar{
+  .avatar {
     display: none;
   }
-  .heading{
+  .heading {
     font-size: 3rem;
   }
 }

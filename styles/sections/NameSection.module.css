@@ -1,3 +1,18 @@
+@keyframes drop {
+  0%{
+    top: -40rem;
+  }
+  80%{
+    top:0rem;
+  }
+  90%{
+    top:-1rem;
+  }
+  100%{
+    top:0rem;
+  }
+}
+
 .background {
   z-index: -1;
   height: 105vh;
@@ -20,6 +35,9 @@
   text-align: center;
   font-weight: bold;
   mix-blend-mode: difference;
+  position: relative;
+  top:0rem;
+  animation: drop 900ms ease-in;
 }
 
 .description {
@@ -29,6 +47,9 @@
   mix-blend-mode: difference;
   font-size: 1.5rem;
   text-align: center;
+  position: relative;
+  top:0rem;
+  animation: drop 600ms ease-in;
 }
 
 .desktopShapes{

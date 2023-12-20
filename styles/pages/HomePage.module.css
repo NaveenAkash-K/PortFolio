@@ -1,3 +1,15 @@
+@keyframes slideToRight {
+  0%{
+    left: -100rem;
+  }
+}
+
+@keyframes slideToLeft {
+  0%{
+    left: 100rem;
+  }
+}
+
 .HomePage{
  padding-bottom: 5rem;
 }
@@ -12,6 +24,7 @@
   background-size: cover;
   background-position: center;
   z-index: 0;
+  animation: slideToRight 1s ease-out;
 }
 
 .topRight{
@@ -24,6 +37,7 @@
   background-size: cover;
   background-position: center;
   z-index: 0;
+  animation: slideToLeft 1s ease-out;
 }
 
 .mobileShapesRight {
@@ -36,6 +50,7 @@
   background-size: cover;
   background-position: center;
   display: none;
+  animation: slideToRight 1s ease-out;
 }
 
 .mobileShapesLeft {
@@ -48,6 +63,7 @@
   background-size: cover;
   background-position: center;
   display: none;
+  animation: slideToLeft 1s ease-out;
 }
 
 @media (width < 770px) {
