@@ -22,7 +22,7 @@
   width: 100%;
   position: absolute;
   border-radius: 25px;
-  background: linear-gradient(90deg, transparent, white);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.545));
   animation: loadingAnimation 1.75s infinite linear;
 }
 

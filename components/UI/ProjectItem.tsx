@@ -6,18 +6,20 @@ const ProjectItem: React.FC<{
   description: string;
 }> = (props) => {
   return (
-    <div
-      style={{ textDecoration: "none", color: "black", height: "min-content" }}
-    >
       <div className={styles.project}>
         <h1 className={styles.name}>{props.title}</h1>
         <p className={styles.description}>{props.description}</p>
         <br />
-        <p style={{ textDecorationLine: "underline", color:"white", mixBlendMode:"difference" }}>
-          Dive Deeper.
+        <p
+          style={{
+            textDecorationLine: "underline",
+            color: "white",
+            mixBlendMode: "difference",
+          }}
+        >
+          {/* Dive Deeper. */}
         </p>
       </div>
-    </div>
   );
 };
 

@@ -19,8 +19,7 @@ const AboutSection: React.FC = () => {
         <span className={styles.bracket}>{"{"}</span>
         <br />
         {Object.entries(aboutMeData).map(([key, value], index) => (
-          <>
-            <div style={{ display: "flex" }}>
+            <div style={{ display: "flex" }} key={key}>
               <span className={styles.rowNum}>0{index + 1}</span>
               <div className={styles.keyValueDiv}>
                 <span className={styles.key}>{key}: </span>
@@ -28,7 +27,6 @@ const AboutSection: React.FC = () => {
                 <br />
               </div>
             </div>
-          </>
         ))}
         <span className={styles.rowNum}>07</span>
         <span className={styles.bracket}>{"}"}</span>

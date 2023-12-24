@@ -7,7 +7,19 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body{
+/* Style the scrollbar thumb */
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(129, 129, 129);
+  border-radius: 100px;
+}
+
+/* Adjust the width of the scrollbar */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Optional: If you want to hide the scrollbar completely when not interacting with it */
+body {
   background-color: #30333d;
 }
 

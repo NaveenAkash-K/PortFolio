@@ -73,20 +73,24 @@ const ProjectPage: React.FC<{
           <br />
           <div className={styles.skillsSection}>
             <h2>Skills / Technology used: </h2>
-            <div className={styles.skillsGrid}>
-              {project.skills.map((skill, index) => (
-                <div className={styles.skill} key={index}>
-                  <div className={styles.skillBackground}></div>
-                  <Image
-                    src={skill.image}
-                    alt={skill.name}
-                    width={isSmallScreen ? skill.smallImage : skill.largeImage}
-                    className={styles.skillImage}
-                  />
-                  <p>{skill.name}</p>
-                </div>
-              ))}
-            </div>
+            <center>
+              <div className={styles.skillsGrid}>
+                {project.skills.map((skill, index) => (
+                  <div className={styles.skill} key={index}>
+                    <div className={styles.skillBackground}></div>
+                    <Image
+                      src={skill.image}
+                      alt={skill.name}
+                      width={
+                        isSmallScreen ? skill.smallImage : skill.largeImage
+                      }
+                      className={styles.skillImage}
+                    />
+                    <p>{skill.name}</p>
+                  </div>
+                ))}
+              </div>
+            </center>
           </div>
           <br />
           <div className={styles.screenshotsSection}>
@@ -94,7 +98,7 @@ const ProjectPage: React.FC<{
             <div className={styles.screenshotsGrid}>
               {project.screenshots.map((screenshot, index) => (
                 <Image
-                key={index}
+                  key={index}
                   src={screenshot.image}
                   alt="screenshot"
                   width={

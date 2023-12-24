@@ -7,29 +7,73 @@ import nextJSImage from "../../assets/skills/nextjs.png";
 import flutterImage from "../../assets/skills/flutter.png";
 import mongoDBImage from "../../assets/skills/mongodb.png";
 import firebaseImage from "../../assets/skills/firebase.png";
-import ethereumImage from "../../assets/skills/ethereum.png";
+import etheriumImage from "../../assets/skills/ethereum.png";
 import solidityImage from "../../assets/skills/solidity.png";
 import ProgressBar from "../UI/ProgressBar";
 
 const skills: {
+  title: string;
   image: StaticImageData;
   imgSize: number;
   percentage: number;
   isLearning: boolean;
 }[] = [
   {
+    title: "Flutter",
     image: flutterImage,
     imgSize: 40,
     percentage: 90,
     isLearning: false,
   },
-  { image: reactImage, imgSize: 40, percentage: 90, isLearning: false },
-  { image: nextJSImage, imgSize: 40, percentage: 80, isLearning: false },
-  { image: nodeJSImage, imgSize: 40, percentage: 75, isLearning: false },
-  { image: mongoDBImage, imgSize: 40, percentage: 75, isLearning: false },
-  { image: firebaseImage, imgSize: 40, percentage: 90, isLearning: false },
-  { image: ethereumImage, imgSize: 40, percentage: 10, isLearning: true },
-  { image: solidityImage, imgSize: 40, percentage: 10, isLearning: true },
+  {
+    title: "ReactJS",
+    image: reactImage,
+    imgSize: 40,
+    percentage: 90,
+    isLearning: false,
+  },
+  {
+    title: "NextJS",
+    image: nextJSImage,
+    imgSize: 40,
+    percentage: 80,
+    isLearning: false,
+  },
+  {
+    title: "NodeJS",
+    image: nodeJSImage,
+    imgSize: 40,
+    percentage: 75,
+    isLearning: false,
+  },
+  {
+    title: "MongoDB",
+    image: mongoDBImage,
+    imgSize: 40,
+    percentage: 75,
+    isLearning: false,
+  },
+  {
+    title: "Firebase",
+    image: firebaseImage,
+    imgSize: 40,
+    percentage: 90,
+    isLearning: false,
+  },
+  {
+    title: "Etherium",
+    image: etheriumImage,
+    imgSize: 40,
+    percentage: 10,
+    isLearning: true,
+  },
+  {
+    title: "Solidity",
+    image: solidityImage,
+    imgSize: 40,
+    percentage: 10,
+    isLearning: true,
+  },
 ];
 
 const SkillsSection: React.FC = () => {
@@ -46,6 +90,7 @@ const SkillsSection: React.FC = () => {
                 className={styles.skillImage}
                 src={skill.image}
                 alt="skill"
+                title={skill.title}
                 width={skill.imgSize}
               />
               <ProgressBar
