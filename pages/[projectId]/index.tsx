@@ -1,4 +1,4 @@
-import { ProjectsData } from "@/data/ProjectsData";
+import { ProjectsData } from "@/model/ProjectsData";
 import Image, { StaticImageData } from "next/image";
 import styles from "../../styles/pages/ProjectPage.module.css";
 import BottomBar from "@/components/UI/BottomBar";
