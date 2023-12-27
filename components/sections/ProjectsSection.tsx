@@ -1,6 +1,6 @@
 import styles from "../../styles/sections/ProjectsSection.module.css";
 import ProjectItem from "../UI/ProjectItem";
-import { ProjectsList } from "@/data/ProjectsData";
+import { ProjectsList } from "@/model/ProjectsData";
 import Link from "next/link";
 
 const ProjectsSection: React.FC = () => {
