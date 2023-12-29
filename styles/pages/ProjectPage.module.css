@@ -108,7 +108,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 13px 15px 13px;
+  padding: 10px 10px 10px 10px;
 }
 
 .skillBackground {
@@ -118,8 +118,8 @@
   right: 0;
   bottom: 0;
   left: 0;
-  box-shadow:  2px 2px 5px #181a1f inset,
-  -2px -2px 5px #4e5362 inset;
+  box-shadow:  2px 2px 10px #181a1f ,
+  -2px -2px 10px #4e5362 ;
   z-index: -1; /* Move the background behind the image */
 }
 
