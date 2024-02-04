@@ -79,6 +79,7 @@ export const ProjectsList: {
     description:
       "The project integrates with aircraft engines to predict potential failures for safer skies.",
   },
+  
   // {
   //   id: "rotaract_club",
   //   title: "Website for Club",
